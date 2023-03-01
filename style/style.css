@@ -136,3 +136,17 @@
     color: #ffffff;
     width: 460px;
 }
+
+/* with grids */
+
+.tiles-container-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1;
+    gap: 0;
+}
+
+.tiles-container-grid .tile {
+    width: auto;
+}
