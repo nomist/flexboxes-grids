@@ -53,7 +53,7 @@
 .tile {
     padding: 50px 110px 50px 50px;
     display: flex;
-    justify-content: baseline;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 70px;
     height: 445px;
@@ -66,7 +66,7 @@
 
 .tile-header {
     display: flex;
-    justify-content: baseline;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 30px;
 }
@@ -103,4 +103,36 @@
 
 .tile:hover .link-button {
     background-color: #ffffff;
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.technology-banner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 150px 200px;
+    gap: 30px;
+    background-color: #252525;
+    background-image: url(/flexboxes-grids/img/technology.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 574px;
+    width: 100%;
+}
+
+.technology .caption {
+    color: #ffffff;
+}
+
+.technology .title-section {
+    color: #ffffff;
+    width: 460px;
 }
