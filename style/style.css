@@ -1,0 +1,39 @@
+.caption {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.title-section {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.text-body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+}
+
+.text-count {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
