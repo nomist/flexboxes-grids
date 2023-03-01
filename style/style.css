@@ -6,6 +6,8 @@
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin: 0;
+    color: #000000;
 }
 
 .title-section {
@@ -16,7 +18,8 @@
     line-height: 42px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    margin: 0;
+    color: #000000;
 }
 
 .text-body {
@@ -26,6 +29,9 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.03em;
+    margin: 0;
+    opacity: 0.6;
+    color: #000000;
 }
 
 .text-count {
@@ -36,4 +42,65 @@
     line-height: 24px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin: 0;
+    color: #000000;
+}
+
+.tiles-container {
+    display: flex;
+}
+
+.tile {
+    padding: 50px 110px 50px 50px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    gap: 70px;
+    height: 445px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
+    background-color: #ffffff;
+    width: 25%;
+}
+
+.tile-header {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.link-button {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    padding: 35px;
+}
+
+.link-button-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.tile:hover {
+    background: #0536FC;
+    transition: 300;
+    transition: 250ms;
+}
+
+.tile:hover .caption {
+    color: #ffffff;
+}
+
+.tile:hover .text-count {
+    color: #ffffff;
+}
+
+.tile:hover .text-body {
+    color: #ffffff;
+}
+
+.tile:hover .link-button {
+    background-color: #ffffff;
 }
