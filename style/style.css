@@ -63,7 +63,7 @@
 }
 
 .tiles-container-flex .tile {
-    width: 25%;
+    flex-basis: 25%;
     height: 445px;
 }
 
@@ -88,18 +88,11 @@
 
 .tile:hover {
     background: #0536FC;
-    transition: 300;
-    transition: 250ms;
+    transition: ease-in .3s;
 }
 
-.tile:hover .caption {
-    color: #ffffff;
-}
-
-.tile:hover .text-count {
-    color: #ffffff;
-}
-
+.tile:hover .caption,
+.tile:hover .text-count,
 .tile:hover .text-body {
     color: #ffffff;
 }
@@ -121,10 +114,7 @@
     flex-direction: column;
     padding: 150px 200px;
     gap: 30px;
-    background-color: #252525;
-    background-image: url(/flexboxes-grids/img/technology.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: #252525 url(/flexboxes-grids/img/technology.jpg) center top no-repeat;
     background-size: cover;
     box-sizing: border-box;
     height: 574px;
@@ -145,7 +135,7 @@
 .tiles-container-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 445px;
     gap: 0px 0px;
 }
@@ -167,11 +157,11 @@
     }
     .tiles-container-flex .tile {
         height: 350px;
-        width: 50%;
+        flex-basis: 50%;
     }
 
     .tiles-container-grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 350px 350px;
         gap: 0px 0px;
     }
@@ -190,12 +180,12 @@
 
     .tiles-container-flex .tile {
         height: auto;
-        width: 100%;
+        flex-basis: 100%;
     }
 
     .tiles-container-grid {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: unset;
+        grid-auto-rows: auto;
         gap: 0px 0px;
     }
 }
